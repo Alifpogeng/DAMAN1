@@ -23,7 +23,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/DAMAN/';
+$config['base_url'] = 'https://35bc-180-250-22-66.ngrok.io/DAMAN/';
+// https://35bc-180-250-22-66.ngrok.io/DAMAN
 
 /*
 |--------------------------------------------------------------------------
