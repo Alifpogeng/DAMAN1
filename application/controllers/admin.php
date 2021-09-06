@@ -1,7 +1,16 @@
 <?php
 
-class Data_pkl extends CI_Controller{
+class Admin extends CI_Controller{
 	public function index()
+	{
+		$this->load->view("templates_admin/header");
+		$this->load->view("templates_admin/sidebar");
+		$this->load->view("admin/dashboard");
+		$this->load->view("templates_admin/footer");
+
+	}
+
+    public function data_pkl()
 	{
 		$data['datapkl'] = $this->model_datapkl->tampil_data()->result();
 		// echo print_r($data);

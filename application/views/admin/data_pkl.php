@@ -9,6 +9,8 @@
         <th>NO HP</th>
         <th>EMAIL</th>
         <th>KOTA</th>
+        <th>MULAI</th>
+        <th>SELESAI</th>
         <th colspan="3">AKSI</th>
       </tr>
 
@@ -23,6 +25,8 @@
         <td><?php echo $pkl->no_hp ?></td>
         <td><?php echo $pkl->email ?></td>
         <td><?php echo $pkl->kota ?></td>
+        <td><?php echo $pkl->tgl_mulai ?></td>
+        <td><?php echo $pkl->tgl_selesai ?></td>
         
         <td>
           <!-- <button class="btn btn-sm btn-primary mb-4" data-toggle="modal" data-target="#edit_data_pkl"><i class="fas fa-plus fa-sm"></i> Tambah Barang</button> -->
@@ -48,38 +52,48 @@
         <form action="<?php echo base_url(). 'admin/data_barang/tambah_aksi'; ?>" method="post" enctype="multipart/form-data" >
 
           <div class="form-group">
-            <label>NAMA BARANG</label>
-            <input type="text" name="nama_brg" class="form-control">
+            <label>Nama</label>
+            <input type="text" name="nama_pkl" class="form-control">
           </div>
 
           <div class="form-group">
-            <label>KETERANGAN</label>
-            <input type="text" name="keterangan" class="form-control">
+            <label>Asal Sekolah</label>
+            <input type="text" name="asal_sekolah" class="form-control">
           </div>
 
           <div class="form-group">
-            <label>KATEGORI</label>
-            <select class="form-control" name="kategori">
-              <option>pupuk</option>
-              <option>obat hama</option>
-              <option>obat gulma</option>
-              <option>alat pertanian</option>
-            </select>
+            <label>No Hp</label>
+            <input type="number" name="no_hp" class="form-control">
           </div>
 
           <div class="form-group">
-            <label>HARGA</label>
-            <input type="text" name="harga" class="form-control">
+            <label>Email</label>
+            <input type="text" name="email" class="form-control">
           </div>
 
           <div class="form-group">
-            <label>STOK</label>
-            <input type="text" name="stok" class="form-control">
+            <label>Kota</label>
+            <input type="text" name="kota" class="form-control">
           </div>
 
           <div class="form-group">
-            <label>Gambar Produk</label><br>
-            <input type="file" name="gambar" class="form-control">
+            <label>Alamat</label>
+            <textarea class="form-control" name="alamat" id="" cols="30" rows="10"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label>Tanggal Mulai</label>
+            <input type="date" name="tgl_mulai" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>Tanggal Selesai</label>
+            <input type="date" name="tgl_selesai" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>foto</label><br>
+            <input type="file" name="foto" class="form-control">
           </div>
 
       </div>
