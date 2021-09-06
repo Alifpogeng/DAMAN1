@@ -1,5 +1,5 @@
 <div class="container-fluid">
-    <button class="btn btn-sm btn-primary mb-4" data-toggle="modal" data-target="#tambah_data_pkl"><i class="fas fa-plus fa-sm"></i> Tambah Barang</button>
+    <button class="btn btn-sm btn-primary mb-4" data-toggle="modal" data-target="#tambah_data_pkl"><i class="fas fa-plus fa-sm"></i>Tambah Data</button>
 
     <table class="table table-bordered">
       <tr>
@@ -49,7 +49,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form action="<?php echo base_url(). 'admin/data_barang/tambah_aksi'; ?>" method="post" enctype="multipart/form-data" >
+        <form action="<?php echo base_url().'admin/tambah_data_pkl'; ?>" method="post" enctype="multipart/form-data" >
 
           <div class="form-group">
             <label>Nama</label>
@@ -94,65 +94,6 @@
           <div class="form-group">
             <label>foto</label><br>
             <input type="file" name="foto" class="form-control">
-          </div>
-
-      </div>
-      <div class="modal-footer">
-        <button type="submit" class="btn btn-primary">Simpan</button>
-        <?php echo anchor('admin/data_pkl',
-          '<div class="btn  btn-success">Close</div>') ?>
-      </div>
-
-      </form>
-
-    </div>
-  </div>
-</div>
-
-<!-- Modal -->
-<div class="modal fade" id="edit_data_pkl" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">FORM INPUT PRODUK</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form action="<?php echo base_url(). 'admin/data_barang/tambah_aksi'; ?>" method="post" enctype="multipart/form-data" >
-
-          <div class="form-group">
-            <label>NAMA BARANG</label>
-            <input type="text" name="nama_brg" class="form-control">
-          </div>
-
-          <div class="form-group">
-            <label>KETERANGAN</label>
-            <input type="text" name="keterangan" class="form-control">
-          </div>
-
-          <div class="form-group">
-            <label>KATEGORI</label>
-            <select class="form-control" name="kategori">
-              <option>pupuk</option>
-              <option>obat hama</option>
-              <option>obat gulma</option>
-              <option>alat pertanian</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label>HARGA</label>
-            <input type="text" name="harga" class="form-control">
-          </div>
-
-          <div class="form-group">
-            <label>STOK</label>
-            <input type="text" name="stok" class="form-control">
-          </div>
-
-          <div class="form-group">
-            <label>Gambar Produk</label><br>
-            <input type="file" name="gambar" class="form-control">
           </div>
 
       </div>
